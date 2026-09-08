@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Contacto | PC Forge
+  </title>
+  <link href="css/estilos.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="barra-superior">
+   Despacho a todo Chile | Cupón DUOC10 en el carrito
+  </div>
+  <header class="encabezado">
+   <div class="contenedor navegacion">
+    <a class="logo" href="index.html">
+     <img alt="Logo PC Forge" src="img/logo.svg"/>
+     <span>
+      PC Forge
+     </span>
+    </a>
+    <nav aria-label="Navegación principal" class="menu">
+     <a href="index.html">
+      Inicio
+     </a>
+     <a href="productos.html">
+      Productos
+     </a>
+     <a href="nosotros.html">
+      Nosotros
+     </a>
+     <a href="blog.html">
+      Blog
+     </a>
+     <a href="contacto.html">
+      Contacto
+     </a>
+     <a href="login.html">
+      Ingresar
+     </a>
+     <a href="registro.html">
+      Registro
+     </a>
+     <a class="carrito-link" href="carrito.html">
+      🛒 (
+      <span class="contador-carrito">
+       0
+      </span>
+      )
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="contenedor">
+   <form class="formulario" id="form-contacto" novalidate="">
+    <h1>
+     Contacto
+    </h1>
+    <p>
+     Envíanos un mensaje y te responderemos a la brevedad.
+    </p>
+    <div class="campo">
+     <label for="nombre">
+      Nombre
+     </label>
+     <input autocomplete="name" id="nombre" maxlength="100" required=""/>
+     <small class="error" id="error-nombre">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="correo">
+      Correo
+     </label>
+     <input autocomplete="email" id="correo" maxlength="100" placeholder="nombre@gmail.com" type="email"/>
+     <small class="error" id="error-correo">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="comentario">
+      Comentario
+     </label>
+     <textarea id="comentario" maxlength="500" placeholder="Escribe tu consulta" required=""></textarea>
+     <small class="error" id="error-comentario">
+     </small>
+    </div>
+    <button class="boton" type="submit">
+     Enviar mensaje
+    </button>
+    <p class="ok" id="form-mensaje">
+    </p>
+   </form>
+  </main>
+  <footer class="pie">
+   <div class="contenedor pie-contenido">
+    <div>
+     <strong>
+      PC Forge
+     </strong>
+     <br/>
+     Hardware, periféricos y computadores armados.
+    </div>
+    <div>
+     Contacto: contacto@pcforge.cl
+     <br/>
+     Horario: Lun-Vie 09:00 a 18:00
+    </div>
+   </div>
+  </footer>
+  <div class="mensaje" id="mensaje">
+  </div>
+  <script src="js/datos.js">
+  </script>
+  <script src="js/validaciones.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
+

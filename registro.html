@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Registro | PC Forge
+  </title>
+  <link href="css/estilos.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="barra-superior">
+   Despacho a todo Chile | Cupón DUOC10 en el carrito
+  </div>
+  <header class="encabezado">
+   <div class="contenedor navegacion">
+    <a class="logo" href="index.html">
+     <img alt="Logo PC Forge" src="img/logo.svg"/>
+     <span>
+      PC Forge
+     </span>
+    </a>
+    <nav aria-label="Navegación principal" class="menu">
+     <a href="index.html">
+      Inicio
+     </a>
+     <a href="productos.html">
+      Productos
+     </a>
+     <a href="nosotros.html">
+      Nosotros
+     </a>
+     <a href="blog.html">
+      Blog
+     </a>
+     <a href="contacto.html">
+      Contacto
+     </a>
+     <a href="login.html">
+      Ingresar
+     </a>
+     <a href="registro.html">
+      Registro
+     </a>
+     <a class="carrito-link" href="carrito.html">
+      🛒 (
+      <span class="contador-carrito">
+       0
+      </span>
+      )
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="contenedor">
+   <form class="formulario" id="form-usuario" novalidate="">
+    <h1>
+     Registro de usuario
+    </h1>
+    <p class="ayuda">
+     Completa tus datos para crear una cuenta en PC Forge.
+    </p>
+    <div class="campo">
+     <label for="run">
+      RUN
+     </label>
+     <input autocomplete="off" id="run" maxlength="9" placeholder="19011022K" required=""/>
+     <small class="error" id="error-run">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="nombre">
+      Nombre
+     </label>
+     <input autocomplete="given-name" id="nombre" maxlength="50" required=""/>
+     <small class="error" id="error-nombre">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="apellidos">
+      Apellidos
+     </label>
+     <input autocomplete="family-name" id="apellidos" maxlength="100" required=""/>
+     <small class="error" id="error-apellidos">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="correo">
+      Correo
+     </label>
+     <input autocomplete="email" id="correo" maxlength="100" placeholder="nombre@gmail.com" required="" type="email"/>
+     <small class="error" id="error-correo">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="fechaNacimiento">
+      Fecha de nacimiento
+     </label>
+     <input autocomplete="bday" id="fechaNacimiento" type="date"/>
+    </div>
+    <div class="campo">
+     <label for="region">
+      Región
+     </label>
+     <select id="region" required="">
+     </select>
+     <small class="error" id="error-region">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="comuna">
+      Comuna
+     </label>
+     <select id="comuna" required="">
+     </select>
+     <small class="error" id="error-comuna">
+     </small>
+    </div>
+    <div class="campo">
+     <label for="direccion">
+      Dirección
+     </label>
+     <input autocomplete="street-address" id="direccion" maxlength="300" required=""/>
+     <small class="error" id="error-direccion">
+     </small>
+    </div>
+    <button class="boton" type="submit">
+     Registrar
+    </button>
+    <p class="ok" id="form-mensaje">
+    </p>
+   </form>
+  </main>
+  <footer class="pie">
+   <div class="contenedor pie-contenido">
+    <div>
+     <strong>
+      PC Forge
+     </strong>
+     <br/>
+     Hardware, periféricos y computadores armados.
+    </div>
+    <div>
+     Contacto: contacto@pcforge.cl
+     <br/>
+     Horario: Lun-Vie 09:00 a 18:00
+    </div>
+   </div>
+  </footer>
+  <div class="mensaje" id="mensaje">
+  </div>
+  <script src="js/datos.js">
+  </script>
+  <script src="js/validaciones.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
+
