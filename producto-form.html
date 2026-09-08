@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Producto | PC Forge
+  </title>
+  <link href="../css/estilos.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <main class="admin">
+   <aside class="sidebar">
+    <h2>
+     PC Forge Admin
+    </h2>
+    <a href="index.html">
+     Inicio
+    </a>
+    <a href="productos.html">
+     Productos
+    </a>
+    <a class="solo-admin" href="producto-form.html">
+     Nuevo producto
+    </a>
+    <a class="solo-admin" href="usuarios.html">
+     Usuarios
+    </a>
+    <a class="solo-admin" href="usuario-form.html">
+     Nuevo usuario
+    </a>
+    <a href="../index.html">
+     Volver a tienda
+    </a>
+    <button onclick="cerrarSesion()">
+     Cerrar sesión
+    </button>
+   </aside>
+   <section class="admin-contenido">
+    <form class="formulario" id="form-producto" novalidate="">
+     <h1 id="titulo-form-producto">
+      Nuevo producto
+     </h1>
+     <input id="producto-id" type="hidden" value="0"/>
+     <div class="campo">
+      <label for="codigo">
+       Código
+      </label>
+      <input id="codigo" minlength="3" required=""/>
+      <small class="error" id="error-codigo">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="nombre">
+       Nombre
+      </label>
+      <input id="nombre" maxlength="100" required=""/>
+      <small class="error" id="error-nombre">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="descripcion">
+       Descripción
+      </label>
+      <textarea id="descripcion" maxlength="500"></textarea>
+      <small class="error" id="error-descripcion">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="precio">
+       Precio
+      </label>
+      <input id="precio" min="0" required="" step="0.01" type="number"/>
+      <small class="error" id="error-precio">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="stock">
+       Stock
+      </label>
+      <input id="stock" min="0" required="" step="1" type="number"/>
+      <small class="error" id="error-stock">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="stockCritico">
+       Stock crítico
+      </label>
+      <input id="stockCritico" min="0" step="1" type="number"/>
+      <small class="error" id="error-stockCritico">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="categoria">
+       Categoría
+      </label>
+      <select id="categoria" required="">
+       <option value="">
+        Seleccione
+       </option>
+       <option>
+        Componentes
+       </option>
+       <option>
+        Equipos y Periféricos
+       </option>
+       <option>
+        PC Armados
+       </option>
+      </select>
+      <small class="error" id="error-categoria">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="imagen">
+       Imagen
+      </label>
+      <input id="imagen" placeholder="img/producto-1.svg" type="text"/>
+      <small class="ayuda">
+       Ruta local de imagen opcional.
+      </small>
+     </div>
+     <button class="boton" type="submit">
+      Guardar producto
+     </button>
+     <p class="ok" id="form-mensaje">
+     </p>
+    </form>
+   </section>
+  </main>
+  <div class="mensaje" id="mensaje">
+  </div>
+  <script src="../js/datos.js">
+  </script>
+  <script src="../js/validaciones.js">
+  </script>
+  <script src="../js/app.js">
+  </script>
+ </body>
+</html>
+

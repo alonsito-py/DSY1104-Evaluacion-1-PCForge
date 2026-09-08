@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Administración | PC Forge
+   Usuarios admin | PC Forge
   </title>
   <link href="../css/estilos.css" rel="stylesheet"/>
  </head>
@@ -37,17 +37,42 @@
     </button>
    </aside>
    <section class="admin-contenido">
-    <h1>
-     Panel de administración
-    </h1>
-    <div class="panel">
-     <h2>
-      Bienvenido
-     </h2>
-     <p>
-      Desde este panel puedes gestionar los productos y usuarios de PC Forge.
-     </p>
+    <div class="titulo-seccion">
+     <div>
+      <h1>
+       Usuarios
+      </h1>
+      <p>
+       Mantenedor de usuarios.
+      </p>
+     </div>
+     <a class="boton" href="usuario-form.html">
+      Nuevo usuario
+     </a>
     </div>
+    <table>
+     <thead>
+      <tr>
+       <th>
+        RUN
+       </th>
+       <th>
+        Nombre
+       </th>
+       <th>
+        Correo
+       </th>
+       <th>
+        Tipo
+       </th>
+       <th>
+        Acciones
+       </th>
+      </tr>
+     </thead>
+     <tbody id="tabla-usuarios">
+     </tbody>
+    </table>
    </section>
   </main>
   <div class="mensaje" id="mensaje">

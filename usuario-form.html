@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Usuario | PC Forge
+  </title>
+  <link href="../css/estilos.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <main class="admin">
+   <aside class="sidebar">
+    <h2>
+     PC Forge Admin
+    </h2>
+    <a href="index.html">
+     Inicio
+    </a>
+    <a href="productos.html">
+     Productos
+    </a>
+    <a class="solo-admin" href="producto-form.html">
+     Nuevo producto
+    </a>
+    <a class="solo-admin" href="usuarios.html">
+     Usuarios
+    </a>
+    <a class="solo-admin" href="usuario-form.html">
+     Nuevo usuario
+    </a>
+    <a href="../index.html">
+     Volver a tienda
+    </a>
+    <button onclick="cerrarSesion()">
+     Cerrar sesión
+    </button>
+   </aside>
+   <section class="admin-contenido">
+    <form class="formulario" id="form-usuario" novalidate="">
+     <h1 id="titulo-form-usuario">
+      Nuevo usuario
+     </h1>
+     <input id="usuario-id" type="hidden" value="0"/>
+     <div class="campo">
+      <label for="run">
+       RUN
+      </label>
+      <input id="run" maxlength="9" placeholder="19011022K" required=""/>
+      <small class="error" id="error-run">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="nombre">
+       Nombre
+      </label>
+      <input id="nombre" maxlength="50" required=""/>
+      <small class="error" id="error-nombre">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="apellidos">
+       Apellidos
+      </label>
+      <input id="apellidos" maxlength="100" required=""/>
+      <small class="error" id="error-apellidos">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="correo">
+       Correo
+      </label>
+      <input id="correo" maxlength="100" required="" type="email"/>
+      <small class="error" id="error-correo">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="fechaNacimiento">
+       Fecha de nacimiento
+      </label>
+      <input id="fechaNacimiento" type="date"/>
+     </div>
+     <div class="campo">
+      <label for="tipo">
+       Tipo de usuario
+      </label>
+      <select id="tipo" required="">
+       <option value="">
+        Seleccione
+       </option>
+       <option>
+        Administrador
+       </option>
+       <option>
+        Cliente
+       </option>
+       <option>
+        Vendedor
+       </option>
+      </select>
+      <small class="error" id="error-tipo">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="region">
+       Región
+      </label>
+      <select id="region" required="">
+      </select>
+      <small class="error" id="error-region">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="comuna">
+       Comuna
+      </label>
+      <select id="comuna" required="">
+      </select>
+      <small class="error" id="error-comuna">
+      </small>
+     </div>
+     <div class="campo">
+      <label for="direccion">
+       Dirección
+      </label>
+      <input id="direccion" maxlength="300" required=""/>
+      <small class="error" id="error-direccion">
+      </small>
+     </div>
+     <button class="boton" type="submit">
+      Guardar usuario
+     </button>
+     <p class="ok" id="form-mensaje">
+     </p>
+    </form>
+   </section>
+  </main>
+  <div class="mensaje" id="mensaje">
+  </div>
+  <script src="../js/datos.js">
+  </script>
+  <script src="../js/validaciones.js">
+  </script>
+  <script src="../js/app.js">
+  </script>
+ </body>
+</html>
+

@@ -4,91 +4,84 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Productos | PC Forge
+   Productos admin | PC Forge
   </title>
-  <link href="css/estilos.css" rel="stylesheet"/>
+  <link href="../css/estilos.css" rel="stylesheet"/>
  </head>
  <body>
-  <div class="barra-superior">
-   Despacho a todo Chile | Cupón DUOC10 en el carrito
-  </div>
-  <header class="encabezado">
-   <div class="contenedor navegacion">
-    <a class="logo" href="index.html">
-     <img alt="Logo PC Forge" src="img/logo.svg"/>
-     <span>
-      PC Forge
-     </span>
+  <main class="admin">
+   <aside class="sidebar">
+    <h2>
+     PC Forge Admin
+    </h2>
+    <a href="index.html">
+     Inicio
     </a>
-    <nav aria-label="Navegación principal" class="menu">
-     <a href="index.html">
-      Inicio
+    <a href="productos.html">
+     Productos
+    </a>
+    <a class="solo-admin" href="producto-form.html">
+     Nuevo producto
+    </a>
+    <a class="solo-admin" href="usuarios.html">
+     Usuarios
+    </a>
+    <a class="solo-admin" href="usuario-form.html">
+     Nuevo usuario
+    </a>
+    <a href="../index.html">
+     Volver a tienda
+    </a>
+    <button onclick="cerrarSesion()">
+     Cerrar sesión
+    </button>
+   </aside>
+   <section class="admin-contenido">
+    <div class="titulo-seccion">
+     <div>
+      <h1>
+       Productos
+      </h1>
+      <p>
+       Mantenedor de productos.
+      </p>
+     </div>
+     <a class="boton solo-admin" href="producto-form.html">
+      Nuevo producto
      </a>
-     <a href="productos.html">
-      Productos
-     </a>
-     <a href="nosotros.html">
-      Nosotros
-     </a>
-     <a href="blog.html">
-      Blog
-     </a>
-     <a href="contacto.html">
-      Contacto
-     </a>
-     <a href="login.html">
-      Ingresar
-     </a>
-     <a href="registro.html">
-      Registro
-     </a>
-     <a class="carrito-link" href="carrito.html">
-      🛒 (
-      <span class="contador-carrito">
-       0
-      </span>
-      )
-     </a>
-    </nav>
-   </div>
-  </header>
-  <main class="contenedor">
-   <div class="titulo-seccion">
-    <div>
-     <h1>
-      Productos
-     </h1>
-     <p>
-      Explora componentes, periféricos y equipos listos para usar.
-     </p>
     </div>
-   </div>
-   <section class="grid-productos" id="lista-productos">
+    <table>
+     <thead>
+      <tr>
+       <th>
+        Código
+       </th>
+       <th>
+        Nombre
+       </th>
+       <th>
+        Precio
+       </th>
+       <th>
+        Stock
+       </th>
+       <th>
+        Acciones
+       </th>
+      </tr>
+     </thead>
+     <tbody id="tabla-productos">
+     </tbody>
+    </table>
    </section>
   </main>
-  <footer class="pie">
-   <div class="contenedor pie-contenido">
-    <div>
-     <strong>
-      PC Forge
-     </strong>
-     <br/>
-     Hardware, periféricos y computadores armados.
-    </div>
-    <div>
-     Contacto: contacto@pcforge.cl
-     <br/>
-     Horario: Lun-Vie 09:00 a 18:00
-    </div>
-   </div>
-  </footer>
   <div class="mensaje" id="mensaje">
   </div>
-  <script src="js/datos.js">
+  <script src="../js/datos.js">
   </script>
-  <script src="js/validaciones.js">
+  <script src="../js/validaciones.js">
   </script>
-  <script src="js/app.js">
+  <script src="../js/app.js">
   </script>
  </body>
 </html>
