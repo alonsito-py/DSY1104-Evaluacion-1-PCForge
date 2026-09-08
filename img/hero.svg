@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560">
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f172a"/><stop offset=".55" stop-color="#1e3a8a"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs>
+<rect width="1200" height="560" fill="url(#a)"/>
+<circle cx="990" cy="100" r="180" fill="#38bdf8" opacity=".18"/>
+<circle cx="130" cy="500" r="180" fill="#22c55e" opacity=".16"/>
+<rect x="650" y="105" width="385" height="255" rx="32" fill="#020617" stroke="#93c5fd" stroke-width="6" opacity=".9"/>
+<rect x="700" y="155" width="286" height="155" rx="16" fill="#1f2937"/>
+<path d="M690 412h315M790 360l-42 52M902 360l42 52" stroke="#e5e7eb" stroke-width="14" stroke-linecap="round"/>
+<text x="105" y="180" font-family="Arial" font-size="70" font-weight="800" fill="#fff">Hardware para tu setup</text>
+<text x="110" y="245" font-family="Arial" font-size="32" fill="#dbeafe">Componentes, PCs armados y soporte especializado</text>
+</svg>

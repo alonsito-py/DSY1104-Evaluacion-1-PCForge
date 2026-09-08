@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+<rect width="360" height="120" rx="24" fill="#0f172a"/>
+<path d="M55 82h82l16-38h112l25 38h22" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="93" cy="83" r="13" fill="#22c55e"/><circle cx="260" cy="83" r="13" fill="#22c55e"/>
+<text x="180" y="45" text-anchor="middle" font-family="Arial" font-weight="800" font-size="34" fill="#fff">PC FORGE</text>
+</svg>
